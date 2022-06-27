@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class DepositCalculator {
-    double calculateComplexPercent(double a, double y, int d) {
+    double calculateComplexPercent(double a, double y, int d) { //Понятнее, когда переменная объявлена имением (amount вместо a и тд)
         double pay = a * Math.pow((1 + y / 12), 12 * d);
         return round(pay, 2);
     }
